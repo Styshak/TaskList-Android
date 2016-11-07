@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_delete_check"
+        android:icon="@drawable/delete_selected_item_selector"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/delete"
+        android:orderInCategory="1"
+        balloonberry:showAsAction="always" >
+    </item>
+
+    <item
+        android:id="@+id/menu_sort"
+        android:icon="@drawable/sort_icon_selector"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/sort"
+        balloonberry:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/menu_sort_date"
+                    android:checked="true"
+                    android:title="@string/sort_date"/>
+                <item
+                    android:id="@+id/menu_sort_name"
+                    android:title="@string/sort_name"/>
+
+                <item
+                    android:id="@+id/menu_sort_priority"
+                    android:title="@string/sort_priority"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/add_task"
+        android:icon="@drawable/add_icon_selector"
+        android:title="@string/add"
+        android:orderInCategory="100"
+        balloonberry:showAsAction="always" />
+</menu>

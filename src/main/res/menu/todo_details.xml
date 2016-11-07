@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_take_photo"
+        android:title="@string/photo"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_make_photo"
+        balloonberry:showAsAction="always" >
+    </item>
+    <item
+        android:id="@+id/menu_priority"
+        android:icon="@drawable/priority_icon_selector"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/priority"
+        balloonberry:showAsAction="always" >
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/menu_priority_low"
+                    android:checked="true"
+                    android:title="@string/low"
+                    android:titleCondensed="0" />
+                <item
+                    android:id="@+id/menu_priority_middle"
+                    android:title="@string/middle"
+                    android:titleCondensed="1" />
+                <item
+                    android:id="@+id/menu_priority_high"
+                    android:title="@string/high"
+                    android:titleCondensed="2" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/save"
+        balloonberry:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/delete"
+        balloonberry:showAsAction="always"
+        android:title="@string/delete"
+        android:icon="@drawable/delete_item_selector">
+    </item>
+</menu>

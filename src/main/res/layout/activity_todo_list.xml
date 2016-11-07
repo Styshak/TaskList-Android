@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.TodoList" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <requestFocus/>
+
+        <FrameLayout
+            android:id="@+id/frameSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:padding="2dp" >
+
+            <EditText
+                android:id="@+id/txtSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="top|left"
+                android:hint="@string/search_title"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColorHint="@drawable/search_text_colors"
+                android:drawableLeft="@drawable/ic_action_search"
+                android:background="@drawable/search_edit_selector" />
+
+            <Button
+                android:id="@+id/clear_search"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/clear"
+                android:onClick="clearSearch" />
+         </FrameLayout>
+
+
+        <ListView
+            android:id="@+id/listTasks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@drawable/listview_row_selector"
+            android:textFilterEnabled="true"
+            android:layout_below="@+id/frameSearch" />
+
+        <RelativeLayout
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:paddingTop="50dp"
+                android:text="@string/empty_list"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
