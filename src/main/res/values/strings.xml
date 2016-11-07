@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="gallery_name">Фотографии</string>
+    <string name="title_activity_todo_list">TodoList</string>
+    <string name="title_activity_todo_details">TodoDetails</string>
+    <string name="add">Добавить</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="new_document">Новая заметка</string>
+    <string name="empty_list">(нет заметок)</string>
+    <string name="confirm_delete_doc">Вы уверены что хотите удалить заметку?</string>
+    <string name="confirm_delete_docs">Вы уверены что хотите удалить заметки?</string>
+    <string name="confirm_save_doc">Чтобы прикрепить фотографию необходимо сохранить заметку. Сохранить?</string>
+    <string name="cancel">Отмена</string>
+    <string name="search_title">Поиск</string>
+    <string name="sort">Сортировать</string>
+    <string name="sort_date">По дате</string>
+    <string name="sort_name">По названию</string>
+    <string name="sort_priority">По приоритету</string>
+    <string name="priority">Приоритет</string>
+    <string name="low">Низкий</string>
+    <string name="middle">Средний</string>
+    <string name="high">Высокий</string>
+    <string name="photo">Сделать фото</string>
+    <string name="empty_gallery">(Фотографий нет)</string>
+    <string name="gallery_title">Фотоснимки камеры</string>
+    <string name="confirm_delete_image">Вы уверены что хотите удалить фотографию?</string>
+    <string name="loading">Загрузка:</string>
+</resources>
